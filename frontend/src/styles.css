@@ -1,0 +1,34 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f7f6; color: #1f2933; }
+.topbar { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 12px 20px; background: #0f766e; color: #fff; }
+.topbar nav { display: flex; gap: 12px; flex: 1; flex-wrap: wrap; }
+.topbar nav a { color: #d1fae5; text-decoration: none; padding: 4px 8px; border-radius: 6px; }
+.topbar nav a.active { background: #115e59; color: #fff; }
+.token-box { display: flex; gap: 6px; }
+main { max-width: 1100px; margin: 0 auto; padding: 20px; }
+h1 { margin-top: 0; }
+input, select, textarea, button { font: inherit; padding: 8px 10px; border-radius: 6px; border: 1px solid #cbd5e1; }
+button { background: #0f766e; color: #fff; border: none; cursor: pointer; }
+button:disabled { background: #94a3b8; cursor: not-allowed; }
+.search, .filters, .pager, .row { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+.card { background: #fff; border-radius: 10px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.card h3 { margin: 0 0 6px; font-size: 1rem; }
+.card img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; background: #e2e8f0; }
+.stat { font-size: 1.8rem; font-weight: 700; }
+.muted { color: #64748b; }
+.error { background: #fee2e2; color: #991b1b; padding: 10px 12px; border-radius: 8px; margin: 12px 0; }
+.notice { background: #fef3c7; color: #92400e; padding: 10px 12px; border-radius: 8px; margin: 12px 0; font-size: .9rem; }
+.table-wrap { overflow-x: auto; background: #fff; border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; white-space: nowrap; }
+.badge { padding: 2px 8px; border-radius: 999px; background: #e2e8f0; font-size: .8rem; }
+.badge.paid, .badge.fulfilled, .badge.done { background: #bbf7d0; }
+.badge.pending, .badge.open, .badge.unfulfilled { background: #fde68a; }
+.badge.refunded, .badge.cancelled { background: #fecaca; }
+.link-btn { background: #fff; color: #0f766e; border: 1px solid #0f766e; text-decoration: none; padding: 8px 12px; border-radius: 6px; display: inline-block; }
+.split { display: grid; grid-template-columns: 260px 1fr; gap: 16px; }
+.list-item { display: block; width: 100%; text-align: left; background: #fff; color: inherit; border: 1px solid #e2e8f0; margin-bottom: 6px; }
+.list-item.active { border-color: #0f766e; }
+form.stack { display: grid; gap: 8px; margin: 12px 0; }
+@media (max-width: 720px) { .split { grid-template-columns: 1fr; } }

@@ -1,0 +1,8 @@
+application_url = "https://groggily-smile-roundness.ngrok-free.dev/new-install"
+
+[access_scopes]
+scopes = "read_products,read_customers,read_orders"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = ["https://groggily-smile-roundness.ngrok-free.dev/api/v1/shopify/callback"]
